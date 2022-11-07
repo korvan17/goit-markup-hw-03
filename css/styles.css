@@ -5,8 +5,8 @@
   --font-logo: 'Raleway';
   --color-white: #ffffff;
   --bcg-dark: #2f303a;
-  --bcg-white: #F5F5F5;
-  --bcg-grey: #F5F4FA;
+  --bcg-white: #f5f5f5;
+  --bcg-grey: #f5f4fa;
 }
 
 /* ----------------GLOBAL---------------- */
@@ -16,7 +16,7 @@ body {
   font-size: 14px;
   color: var(--color-black);
   letter-spacing: 0.03em;
-  background-color: var(--bcg-white);
+  background-color: var(--color-white);
 }
 
 .list {
@@ -31,7 +31,48 @@ body {
 .accent {
   color: var(--color-accent);
 }
+
+.conteiner {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
 /* -----------------------HEADER ------------------------ */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
 
 .logo {
   font-family: var(--font-logo);
@@ -44,6 +85,17 @@ body {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  /* margin-right: 344px; */
+  gap: 50px;
+}
+
+.list.navigation {
+  gap: 50px;
+  margin-left: auto;
+}
+
+.nav.list.navigation {
+  margin-left: 93px;
 }
 
 .nav-link:hover,
@@ -56,17 +108,39 @@ body {
 /* -----------------------MAIN ------------------------- */
 
 /* ---------------HERO ----------------- */
+.hero {
+  /* height: 600px; */
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--bcg-dark);
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 10px solid red; */
+}
+
+.hero-block {
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 10px solid tomato; */
+}
 
 .hero-title {
+  color: var(--color-white);
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .hero-btn {
+  margin-top: 30px;
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 16px;
@@ -75,36 +149,71 @@ body {
   letter-spacing: 0.06em;
   background: var(--color-accent);
   cursor: pointer;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-width: 216px;
+  height: 50px;
 }
 
 /* -------------ADVANTEGE--------------- */
+
+.advantage {
+  padding-top: 94px;
+}
+
+.advantage-hide {
+  display: none;
+}
+
+.advantage > .list {
+  display: flex;
+  gap: 30px;
+}
 
 .advantage-title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 14px;
 }
 .advantage-item {
   color: var(--color-grey);
   line-height: 1.7;
+  padding-top: 10px;
 }
 
 /* -------------PORTFOLIO--------------- */
 
+.portfolio {
+  /* padding-top: 118px; */
+}
 .portfolio-title {
+  margin-top: 118px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
 }
 
+.portfolio > .list {
+  padding-top: 50px;
+  padding-bottom: 92px;
+  gap: 30px;
+}
 /* -------------TEAM--------------- */
 
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
   background-color: var(--bcg-grey);
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-title {
@@ -112,26 +221,66 @@ body {
   font-size: 36px;
   line-height: calc(42 / 36);
 }
+
+.team > .list {
+  margin-top: 50px;
+  justify-content: center;
+  gap: 30px;
+}
+
 .employee-name {
   font-weight: 500;
+  background-color: var(--color-white);
+  padding-top: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .employee-desc {
   font-weight: 400;
   color: var(--color-grey);
+  background-color: var(--color-white);
+  padding-top: 10px;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* ---------------------FOOTER----------------------- */
 .footer {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  /* align-items: center; */
   background-color: var(--bcg-dark);
   color: var(--color-white);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
+.footer-block {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid red; */
+}
+
 .address {
+  margin-top: 20px;
   font-style: normal;
   line-height: calc(24 / 14);
 }
 
 .address-link {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.address-item.mail{
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 .address-link:hover,
@@ -143,12 +292,43 @@ body {
 /* ----------------------------------------------------------------- */
 /* ---------------------PAGE PORTFOLIO------------------------------ */
 
+.portfolio-gallery {
+  padding-top: 94px;
+  border: 1px solid #ECECEC;
+}
+
+.portfolio-gallery > .title {
+  display: none;
+}
+
+.portfolio-gallery > .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list.button {
+  gap: 8px;
+}
+
 .btn {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   text-align: center;
   font-family: inherit;
+  min-width: 73px;
+  height: 38px;
+  letter-spacing: 0.03em;
+  padding-left: 22px;
+  padding-right: 22px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: #f5f4fa;
 }
 
 .btn:hover {
@@ -157,15 +337,28 @@ body {
   cursor: pointer;
 }
 
+.portfolio-list {
+  padding-top: 50px;
+  padding-bottom: 94px;
+
+}
+
 .portfolio-list h2 {
+  padding-top: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
+  padding-left: 24px;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
 }
 
 .portfolio-list p {
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--color-grey);
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-bottom: 1px solid #EEEEEE;
 }
