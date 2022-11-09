@@ -33,9 +33,7 @@ body {
 }
 
 .container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -120,12 +118,8 @@ img {
 .hero {
   text-align: center;
   background-color: var(--bcg-dark);
-  height: 600px;
-}
-
-.hero-block {
-  margin-top: 100px;
-  padding: 0px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -172,17 +166,20 @@ img {
   gap: 30px;
 }
 
+.advantage-point {
+  width: calc(100% - 3*30px / 4);
+}
+
 .advantage-title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
   font-size: 14px;
 }
 .advantage-item {
   color: var(--color-grey);
   line-height: 1.7;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 /* -------------PORTFOLIO--------------- */
@@ -211,7 +208,6 @@ img {
   line-height: calc(19 / 16);
   text-align: center;
   background-color: var(--bcg-grey);
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -244,7 +240,7 @@ img {
 .employee-desc {
   font-weight: 400;
   color: var(--color-grey);
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 /* ---------------------FOOTER----------------------- */
@@ -269,8 +265,8 @@ img {
 }
 
 .address-item.mail {
-  padding-top: 9px;
-  padding-bottom: 9px;
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 .address-link:hover,
@@ -291,7 +287,7 @@ img {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -316,7 +312,8 @@ img {
   border: #f5f4fa;
 }
 
-.btn:hover {
+.btn:hover, 
+.btn:focus {
   background-color: var(--color-accent);
   color: var(--color-white);
   cursor: pointer;
