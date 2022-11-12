@@ -34,6 +34,8 @@ body {
 
 .container {
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -149,6 +151,7 @@ img {
   border-radius: 4px;
   min-width: 216px;
   height: 50px;
+  border: none;
 }
 
 /* -------------ADVANTEGE--------------- */
@@ -167,7 +170,7 @@ img {
 }
 
 .advantage-point {
-  width: calc(100% - 3*30px / 4);
+  width: calc(100% - 3 * 30px / 4);
 }
 
 .advantage-title {
@@ -188,9 +191,12 @@ img {
   padding-top: 0px;
 }
 
+.portfolio-title {
+  margin-bottom: 50px;
+}
+
 .portfolio-block > .list {
   display: flex;
-  padding-top: 50px;
   gap: 30px;
 }
 
@@ -212,9 +218,12 @@ img {
   margin-right: auto;
 }
 
+.team-title {
+  margin-bottom: 50px;
+}
+
 .team-block > .list {
   display: flex;
-  margin-top: 50px;
   justify-content: center;
   gap: 30px;
 }
@@ -235,6 +244,7 @@ img {
 }
 
 .employee-name {
+  font-size: 16px;
   font-weight: 500;
 }
 .employee-desc {
@@ -284,16 +294,19 @@ img {
 
 .portfolio-gallery > .list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .list.button {
   gap: 8px;
+  margin-bottom: 50px;
+  justify-content: center;
 }
+
+.portfolio-list {
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
 
 .btn {
   font-weight: 500;
@@ -311,15 +324,11 @@ img {
   border: #f5f4fa;
 }
 
-.btn:hover, 
+.btn:hover,
 .btn:focus {
   background-color: var(--color-accent);
   color: var(--color-white);
   cursor: pointer;
-}
-
-.portfolio-list {
-  padding-top: 50px;
 }
 
 .cont-wrap {
@@ -337,6 +346,7 @@ img {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .portfolio-list p {
